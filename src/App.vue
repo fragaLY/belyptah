@@ -1,28 +1,33 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app id="inspire">
+    <Header/>
+    <v-content id="content">
+      <v-container fluid class="pa-0 ma-0">
+        <router-view/>
+      </v-container>
+    </v-content>
+    <Footer/>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+    import {mapState} from "vuex";
+    import Header from "./components/default/Header";
+    import Footer from "./components/default/Footer";
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    export default {
+        name: 'App',
+        components: {Footer, Header},
+        computed: {
+            ...mapState(['theme'])
+        }
+    }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+
+  #inspire{
+    /*overflow-y: hidden*/
+    height: 100vh
+  }
 </style>
