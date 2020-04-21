@@ -74,4 +74,8 @@
     -ms-flex-align: center;
     align-items: center;
   }
+
+  .swiper-container {
+    height: 78vh;
+  }
 </style>

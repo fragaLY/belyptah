@@ -27,7 +27,5 @@
 <style scoped>
 
   #inspire{
-    /*overflow-y: hidden*/
-    height: 100vh
   }
 </style>
