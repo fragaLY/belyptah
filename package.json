@@ -15,7 +15,7 @@
     "jquery": "^3.4.1",
     "lru-cache": "^5.1.1",
     "run": "^1.4.0",
-    "swiper": "^5.3.7",
+    "swiper": "^6.5.1",
     "vue": "^2.6.11",
     "vue-awesome-swiper": "^4.1.1",
     "vue-router": "^3.1.6",
